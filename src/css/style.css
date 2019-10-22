@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -580,6 +581,10 @@ a {
   margin-right: 23px;
 }
 
+.hero-countdown {
+  margin-top: -80px;
+}
+
 .info {
   padding-top: 121px;
 }
@@ -682,44 +687,32 @@ a {
   max-width: 220px;
 }
 
-.clock-item .inner {
-  height: 0px;
-  padding-bottom: 100%;
-  position: relative;
-  width: 100%;
-}
-
-.clock-canvas {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  height: 0px;
-  padding-bottom: 100%;
-}
-
-.text {
-  color: #fff;
-  font-size: 25px;
-  font-weight: bold;
-  margin-top: -50px;
+/*Элементы счётчика, день/час/минута/секунда*/
+.countdown {
   position: absolute;
-  top: 50%;
-  text-align: center;
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  margin: 0 auto;
 }
 
-.text .val {
+.countdown__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 10px solid rgba(255, 54, 1, 0.5);
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
   font-size: 25px;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .clock-item {
-    margin-bottom: 30px;
-  }
-}
-
-@media (max-width: 767px) {
-  .clock-item {
-    margin: 0px 30px 30px 30px;
-  }
+  margin-right: 19px;
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
