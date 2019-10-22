@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,129 +10,191 @@
 
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"> -->
 </head>
+
 <body>
   <main class="page">
-      <h1 class="page__title"><span class="page__subtitle">AMST</span> ЧАСЫ, КОТОРЫЕ ВЫБИРАЮТ СИЛЬНЫЕ МУЖЧИНЫ</h1>
+    <h1 class="page__title"><span class="page__subtitle">AMST</span> ЧАСЫ, КОТОРЫЕ ВЫБИРАЮТ СИЛЬНЫЕ МУЖЧИНЫ</h1>
     <div class="container page-wrap">
 
-        <section class="edge page__column">
-          <div class="edge-wrap">
-            <div class="edge-card">
-              <div class="edge__image">
-                <img src="img/edge/Icon_1.png" alt="Иконка бриллиант">
-              </div>
-              <p class="edge__text">СТЕКЛО С САПФИРОВЫМ ПОКРЫТИЕМ</p>
+      <section class="edge page__column">
+        <div class="edge-wrap">
+          <div class="edge-card">
+            <div class="edge__image">
+              <img src="img/edge/Icon_1.png" alt="Иконка бриллиант">
             </div>
-            <!-- /.edge-card -->
-            <div class="edge-card">
-              <div class="edge__image">
-                <img src="img/edge/Icon_2.png" alt="Иконка ударопрочности">
-              </div>
-              <p class="edge__text">ПРОТИВОУДАРНЫЕ И НАДЕЖНЫЕ</p>
-            </div>
-            <!-- /.edge-card -->
-            <div class="edge-card">
-              <div class="edge__image">
-                <img src="img/edge/Icon_3.png" alt="Иконка водонепроницаемости">
-              </div>
-              <p class="edge__text">ВОДОНЕПРОНИЦИЕМЫЙ КОРПУС</p>
-            </div>
-            <!-- /.edge-card -->
+            <p class="edge__text">СТЕКЛО С САПФИРОВЫМ ПОКРЫТИЕМ</p>
           </div>
-          <!-- /.edge-wrap -->
-        </section>
-        <!-- /.edge -->
+          <!-- /.edge-card -->
+          <div class="edge-card">
+            <div class="edge__image">
+              <img src="img/edge/Icon_2.png" alt="Иконка ударопрочности">
+            </div>
+            <p class="edge__text">ПРОТИВОУДАРНЫЕ И НАДЕЖНЫЕ</p>
+          </div>
+          <!-- /.edge-card -->
+          <div class="edge-card">
+            <div class="edge__image">
+              <img src="img/edge/Icon_3.png" alt="Иконка водонепроницаемости">
+            </div>
+            <p class="edge__text">ВОДОНЕПРОНИЦИЕМЫЙ КОРПУС</p>
+          </div>
+          <!-- /.edge-card -->
+        </div>
+        <!-- /.edge-wrap -->
+      </section>
+      <!-- /.edge -->
 
-        <section class="hero page__column">
-          <div class="hero-wrap">
-              <div class="hero-clock">
-                  <img src="img/hero/clock.png" alt="картинка часов">
-                </div>
-                <!-- /.hero-clock -->
-                <div class="hero-sale">
-                  <img src="img/hero/sale.png" alt="скидка">
-                  <span class="hero-sale__text">-72%</span>
-                </div>
-                <!-- /.hero-sale -->
-                <div class="hero-hit">
-                  <img src="img/hero/red.png" alt="обрамление хита">
-                  <span class="hero-hit__text">ХИТ ПРОДАЖ!</span>
-                </div>
-                <!-- /.hero-hit -->
-                <div class="hero-price">
-                  <img src="img/hero/price.png" alt="обводка цены">
-                  <span class="hero-price_before">3 535k idr</span>
-                  <span class="hero-price_after">990k IDr</span>
-                </div>
-                <!-- /.hero-price -->
-                <div class="hero-timer">
-                    <!-- <div id="countdown" class="countdown">
-                        <div class="countdown-number">
-                          <span class="hours countdown-time"></span>
-                          <span class="countdown-text">ЧАСЫ</span>
-                        </div>
-                        <div class="countdown-number">
-                          <span class="minutes countdown-time"></span>
-                          <span class="countdown-text">МИНУТЫ</span>
-                        </div>
-                        <div class="countdown-number">
-                          <span class="seconds countdown-time"></span>
-                          <span class="countdown-text">СЕКУНДЫ</span>
-                        </div>
-                      </div> -->
-                </div>
-                <!-- /.hero-timer -->
-                  <button class="button hero__button">Заказать</button>
-                <div class="hero-quality">
-                  <img src="img/hero/30 giorni.png" alt="гарантия">
-                  <img src="img/hero/100%.png" alt="100% качество">
-                </div>
-                <!-- /.hero-quality -->
+      <section class="hero page__column">
+        <div class="hero-wrap">
+          <div class="hero-clock">
+            <img src="img/hero/clock.png" alt="картинка часов">
           </div>
-          <!-- /.hero-wrap -->
-        </section>
-        <!-- /.hero -->
+          <!-- /.hero-clock -->
+          <div class="hero-sale">
+            <img src="img/hero/sale.png" alt="скидка">
+            <span class="hero-sale__text">-72%</span>
+          </div>
+          <!-- /.hero-sale -->
+          <div class="hero-hit">
+            <img src="img/hero/red.png" alt="обрамление хита">
+            <span class="hero-hit__text">ХИТ ПРОДАЖ!</span>
+          </div>
+          <!-- /.hero-hit -->
+          <div class="hero-price">
+            <img src="img/hero/price.png" alt="обводка цены">
+            <span class="hero-price_before">3 535k idr</span>
+            <span class="hero-price_after">990k IDr</span>
+          </div>
+          <!-- /.hero-price -->
+          <div class="hero-countdown countdown-container">
+              <div class="clock row">
+                <!-- hours -->
+                <div class="clock-item clock-hours countdown-time-value col-sm-6 col-md-3">
+                  <div class="wrap">
+                    <div class="inner">
+                      <div id="canvas_hours" class="clock-canvas"></div>
+                      <div class="text">
+                        <p class="val">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-        <section class="info page__column">
-          <div class="info-rating">
-            <div class="info-rating__img">
-              <img src="img/info/stars.png" alt="Рейтинг звезды">
-            </div>
-            <p class="info-rating__text">
-              <span class="text_yellow">средний рейтинг</span><br>
-              среди наших покупателей
-            </p>
-            <button class="button info-rating__button">читать отзывы</button>
+                <!-- minutes -->
+                <div class="clock-item clock-minutes countdown-time-value col-sm-6 col-md-3">
+                  <div class="wrap">
+                    <div class="inner">
+                      <div id="canvas_minutes" class="clock-canvas"></div>
+                      <div class="text">
+                        <p class="val">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- seconds -->
+                <div class="clock-item clock-seconds countdown-time-value col-sm-6 col-md-3">
+                  <div class="wrap">
+                    <div class="inner">
+                      <div id="canvas_seconds" class="clock-canvas"></div>
+                      <div class="text">
+                        <p class="val">0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
           </div>
-          <!-- /.info-rating -->
-          <div class="info-delivery">
-            <h3 class="info-delivery__title">Доставка
-              <span class="text_yellow">оплата</span></h3>
-            <ul class="list info-list">
-              <li class="info-list__item">
-                <span class="info-list__icon"><img src="img/info/icon_4.png" alt=""></span>
-                <span class="info-list__text">Оставьте заявку и мы вам перезвоним.</span>  
-              </li>
-              <li class="info-list__item">
-                <span class="info-list__icon"><img src="img/info/icon_5.png" alt=""></span>
-                <span class="info-list__text">Оплата при получении.</span> 
-              </li>
-              <li class="info-list__item">
-                <span class="info-list__icon"><img src="img/info/icon_6.png" alt=""></span>
-                <span class="info-list__text">Доставка в течении 3-4 дней.</span> 
-              </li>
-            </ul>
+          <!-- /.hero-countdown -->
+
+          <button class="button hero__button">Заказать</button>
+
+          <div class="hero-quality">
+            <img src="img/hero/30 giorni.png" alt="гарантия">
+            <img src="img/hero/100.png" alt="гарантия">
           </div>
-          <!-- /.info-delivery -->
-        </section>
-        <!-- /.hero-info -->
+          <!-- /.hero-quality -->
+        </div>
+        <!-- /.hero-wrap -->
+      </section>
+      <!-- /.hero -->
+
+      <section class="info page__column">
+        <div class="info-rating">
+          <div class="info-rating__img">
+            <img src="img/info/stars.png" alt="Рейтинг звезды">
+          </div>
+          <p class="info-rating__text">
+            <span class="text_yellow">средний рейтинг</span><br>
+            среди наших покупателей
+          </p>
+          <button class="button info-rating__button">читать отзывы</button>
+        </div>
+        <!-- /.info-rating -->
+        <div class="info-delivery">
+          <h3 class="info-delivery__title">Доставка
+            <span class="text_yellow">оплата</span></h3>
+          <ul class="list info-list">
+            <li class="info-list__item">
+              <span class="info-list__icon"><img src="img/info/icon_4.png" alt=""></span>
+              <span class="info-list__text">Оставьте заявку и мы вам перезвоним.</span>
+            </li>
+            <li class="info-list__item">
+              <span class="info-list__icon"><img src="img/info/icon_5.png" alt=""></span>
+              <span class="info-list__text">Оплата при получении.</span>
+            </li>
+            <li class="info-list__item">
+              <span class="info-list__icon"><img src="img/info/icon_6.png" alt=""></span>
+              <span class="info-list__text">Доставка в течении 3-4 дней.</span>
+            </li>
+          </ul>
+        </div>
+        <!-- /.info-delivery -->
+      </section>
+      <!-- /.hero-info -->
     </div>
     <!-- /.container -->
-    
+
 
   </main>
   <!-- /.page -->
 
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script> 
+<script type="text/javascript" src="js/kinetic.js"></script> 
+<script type="text/javascript" src="js/jquery.final-countdown.js"></script> 
+<script type="text/javascript">  
+  $(document).ready(function() {
+$('.countdown').final_countdown({
+start: '1362139200',
+end: '1388461320',
+now: '1387461319',
+selectors: {
+    value_seconds: '.clock-seconds .val',
+    canvas_seconds: 'canvas_seconds',
+    value_minutes: '.clock-minutes .val',
+    canvas_minutes: 'canvas_minutes',
+    value_hours: '.clock-hours .val',
+    canvas_hours: 'canvas_hours',
+},
+seconds: {
+    borderColor: '#7995D5',
+    borderWidth: '6'
+},
+minutes: {
+    borderColor: '#ACC742',
+    borderWidth: '6'
+},
+hours: {
+    borderColor: '#ECEFCB',
+    borderWidth: '6'
+}}, function() {
+// Finish callback
+});
+});
+</script>
+
 </body>
+
 </html>
