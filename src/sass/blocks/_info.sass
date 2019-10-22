@@ -1,9 +1,58 @@
 .info 
+  padding-top: 121px
   &-rating 
+    display: flex
+    flex-direction: column 
+    justify-content: center
+    align-items: center
+    margin-bottom: 76px
     &__text 
+      max-width: 250px
       color: #ffffff
       font-size: 17px
       font-weight: 700
       text-transform: uppercase
+      text-align: center
+    &__button 
+      max-width: 212px
+      padding: 12px 19px
+      border: 3px solid #ffcc00
+      background-color: transparent
+      font-size: 20px
+  &-delivery 
+    display: flex
+    flex-direction: column 
+    align-items: center
+    &__title 
+      color: #ffffff
+      font-size: 22px
+      font-weight: 700
+      text-transform: uppercase
+      max-width: 123px
+      text-align: center
+      margin-top: 0
+      margin-bottom: 19px
+  &-list
+    margin-top: 0
+    &__item 
+      display: flex
+      align-items: center
+      margin-bottom: 10px
+      &:nth-child(3)
+        .info-list__text
+          max-width: 183px
+    &__icon 
+      width: 47px 
+      height: 47px 
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-right: 22px
+    &__text 
+      color: #fff
+      font-size: 19px
+      font-weight: 400
+      max-width: 220px
+        
 
 
