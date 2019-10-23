@@ -1,6 +1,6 @@
 .page 
   max-width: 1920px
-  height: 100vh
+  // height: 100vh
   background: url(../img/backround.png) no-repeat
   background-position: center center 
   background-size: cover
@@ -45,7 +45,21 @@
 
 @media (max-width: 1000px)
   .page 
-    flex-direction: row
+    position: static
+    &-wrap
+      flex-direction: column
+    &__title 
+      text-align: right
+    &__column 
+      &:first-child 
+        width: 100%
+        order: 2
+      &:nth-child(2)
+        width: 100%
+        order: 1
+      &:last-child
+        width: 100%
+        order: 3
 
       
       

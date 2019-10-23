@@ -12,3 +12,23 @@
     color: #ffffff
     font-size: 16px
     font-weight: 500
+    &_mobile 
+      display: none
+
+
+@media (max-width: 1000px)
+  .edge 
+    padding-top: 30px 
+    padding-left: 0
+    &-wrap 
+      flex-direction: row
+      justify-content: space-between
+    &-card 
+      align-items: center
+      justify-content: center
+    &__text 
+      text-align: center
+      &_dekstop 
+        display: none
+      &_mobile 
+        display: flex
