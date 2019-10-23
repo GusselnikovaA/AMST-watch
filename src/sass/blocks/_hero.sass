@@ -95,7 +95,7 @@
       left: 3%
     &-hit 
       top: 0
-      left: 0
+      left: -10%
     &-price
       top: 62%
     &-quality 
@@ -105,6 +105,64 @@
       left: 86%
       img 
         margin-bottom: 10px
+
+@media (max-width: 768px)
+  .hero 
+    &-sale 
+      left: -15%
+    &-quality
+      img 
+        margin-right: 0
+
+@media (max-width: 576px)
+    .hero 
+      &-quality
+        bottom: 67%
+        left: 80%
+  
+@media (max-width: 450px)
+    .hero 
+      &-hit 
+        max-width: 200px
+        &__text 
+          font-size: 20px
+          left: 25%
+      &-sale 
+        max-width: 300px
+        left: -30%
+      &-price 
+        top: 60%
+        max-width: 350px
+        &_before, &_after 
+          font-size: 20px
+        &_before 
+          &:before 
+            width: 120px
+            height: 3px
+            bottom: 10px
+      &-quality 
+        bottom: 60%
+
+@media (max-width: 356px)
+    .hero 
+      &-clock 
+        margin-top: 10px
+      &-hit 
+        left: -20%
+      &-sale 
+        max-width: 250px
+        left: -35%
+        top: 12%
+        &__text 
+          font-size: 20px
+      &-price 
+        max-width: 300px
+      // &-quality 
+      //   bottom: -55%
+  
+
+
+
 
 
     

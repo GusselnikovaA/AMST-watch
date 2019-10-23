@@ -1,6 +1,6 @@
 $(document).ready(function(){
   let feedbackButton = $('.info-rating__button');
-  let feedback = $('.feedback');
+  let feedback = $('.feedback_dekstop');
   let close = $('.close');
 
   feedbackButton.on('click', function(){

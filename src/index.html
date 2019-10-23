@@ -105,7 +105,30 @@
             </section>
             <!-- /.hero -->
 
-            <div class="feedback feedback_mobile">
+            <div class="order order_mobile page__column">
+              <div class="order-container">
+                <button class="close order__close">
+                  <i class="fa fa-times"></i>
+                </button>
+                <h2 class="order__title">оставьте ваши контактные данные и наш менеджер
+                  <span class="text_yellow">свяжется с вами!</span>
+                </h2>
+                <div class="order-block">
+                  <form action="#" class="form order__form" id="order-form">
+                    <label for="name">Пример: Василий Петров</label>
+                    <input type="text" id="name" name="name" class="input order__input" placeholder="Ваше имя">
+                    <label for="phone">Пример: +79230098456</label>
+                    <input type="tel" id="phone" name="phone" class="input order__input" placeholder="Ваш номер телефона">
+                    <button type="submit" class="button order__button">ЗАКАЗАТЬ</button>
+                  </form>
+                </div>
+                <!-- /.order-block -->
+              </div>
+              <!-- /.order-container -->
+            </div>
+            <!-- /.order -->
+
+            <div class="feedback feedback_mobile page__column">
               <div class="feedback-container">
                 <button class="close feedback__close">
                   <i class="fa fa-times"></i>
@@ -190,16 +213,16 @@
                   <span class="text_yellow">оплата</span></h3>
                 <ul class="list info-list">
                   <li class="info-list__item">
-                    <span class="info-list__icon"><img src="img/info/icon_4.png" alt=""></span>
-                    <span class="info-list__text">Оставьте заявку и мы вам перезвоним.</span>
+                    <div class="info-list__icon"><img src="img/info/icon_4.png" alt=""></div>
+                    <div class="info-list__text">Оставьте заявку и мы вам перезвоним.</div>
                   </li>
                   <li class="info-list__item">
-                    <span class="info-list__icon"><img src="img/info/icon_5.png" alt=""></span>
-                    <span class="info-list__text">Оплата при получении.</span>
+                    <div class="info-list__icon"><img src="img/info/icon_5.png" alt=""></div>
+                    <div class="info-list__text">Оплата при получении.</div>
                   </li>
                   <li class="info-list__item">
-                    <span class="info-list__icon"><img src="img/info/icon_6.png" alt=""></span>
-                    <span class="info-list__text">Доставка в течении 3-4 дней.</span>
+                    <div class="info-list__icon"><img src="img/info/icon_6.png" alt=""></div>
+                    <div class="info-list__text">Доставка в течении 3-4 дней.</div>
                   </li>
                 </ul>
               </div>
@@ -215,7 +238,7 @@
   <!-- /.page -->
 
   <!-- ВСПЛЫВАЮЩЕЕ ОКНО ПРИ НАЖАТИИ НА КНОПКУ ЗАКАЗАТЬ-->
-  <div class="order">
+  <div class="order order_dekstop">
     <div class="order-container">
       <button class="close order__close">
         <i class="fa fa-times"></i>
@@ -239,7 +262,7 @@
   <!-- /.order -->
 
   <!-- ВСПЛЫВАЮЩЕЕ ОКНО ПРИ НАЖАТИИ НА КНОПКУ ОТЗЫВЫ-->
-  <div class="feedback">
+  <div class="feedback feedback_dekstop">
     <div class="feedback-container">
       <button class="close feedback__close">
         <i class="fa fa-times"></i>

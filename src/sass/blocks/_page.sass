@@ -48,8 +48,6 @@
     position: static
     &-wrap
       flex-direction: column
-    // &__title 
-    //   text-align: right
     &__column 
       &:first-child 
         width: 100%
@@ -57,9 +55,37 @@
       &:nth-child(2)
         width: 100%
         order: 1
-      &:last-child
+      &:nth-child(3)
         width: 100%
         order: 3
+      &:nth-child(4)
+        width: 100%
+        order: 4
+      &:last-child
+        width: 100%
+        order: 5
+
+@media (max-width: 768px)
+  .page 
+    &__title 
+      text-align: right
+      margin-bottom: 10px
+
+@media (max-width: 576px)
+  .page 
+    &__title 
+      font-size: 20px
+      padding-right: 10px
+    &__subtitle 
+      font-size: 29px
+
+@media (max-width: 356px)
+  .page 
+    &__title 
+      font-size: 15px
+    &__subtitle 
+      font-size: 24px
+
 
       
       
