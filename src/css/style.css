@@ -582,7 +582,9 @@ a {
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
+  display: block;
   z-index: 3;
+  position: relative;
 }
 
 .page__subtitle {
@@ -1096,7 +1098,7 @@ a {
   margin: 0px 10px;
 }
 
-.feedback-arrows {
+.feedback__arrows {
   position: absolute;
   top: 40%;
   right: -77px;
