@@ -1,7 +1,7 @@
 .countdown
   display: flex
   color: #fff
-  margin:  0 auto
+  justify-content: center 
   margin-bottom: 15px
   &__item
     display: flex
@@ -13,6 +13,8 @@
     height: 75px
     font-size: 25px
     margin-right: 19px
+    &:last-child
+      margin-right: 0
   &-text 
     background-color: rgba(0, 0, 0, 0.6)
     color: #ffffff
@@ -22,6 +24,8 @@
     width: 238px
     display: flex
     justify-content: space-between
+  &__hours 
+    margin-right: 20px
 
 
 

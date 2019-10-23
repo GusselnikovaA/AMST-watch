@@ -411,6 +411,9 @@ a {
   .info-rating__button:hover {
     background-color: #ffcc00;
   }
+  .hero__button:hover {
+    background-color: #ffaa00;
+  }
 }
 
 .page {
@@ -431,7 +434,7 @@ a {
 .page__title {
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 30px;
+  padding-top: 15px;
   color: #ffffff;
   font-size: 29px;
   font-weight: 500;
@@ -508,14 +511,15 @@ a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-top: -80px;
+  margin-top: -75px;
+  padding-left: 30px;
   z-index: 9999;
 }
 
 .hero-sale {
   position: absolute;
   top: 7%;
-  left: -14%;
+  left: -12%;
 }
 
 .hero-sale__text {
@@ -546,7 +550,6 @@ a {
   width: 440px;
   position: absolute;
   top: 49%;
-  left: 10%;
 }
 
 .hero-price_before, .hero-price_after {
@@ -602,7 +605,7 @@ a {
 
 .hero-countdown {
   position: absolute;
-  bottom: 100px;
+  bottom: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -722,7 +725,9 @@ a {
   display: -ms-flexbox;
   display: flex;
   color: #fff;
-  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 15px;
 }
 
@@ -744,6 +749,10 @@ a {
   margin-right: 19px;
 }
 
+.countdown__item:last-child {
+  margin-right: 0;
+}
+
 .countdown-text {
   background-color: rgba(0, 0, 0, 0.6);
   color: #ffffff;
@@ -757,5 +766,9 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.countdown__hours {
+  margin-right: 20px;
 }
 /*# sourceMappingURL=style.css.map */

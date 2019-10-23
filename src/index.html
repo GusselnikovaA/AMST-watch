@@ -10,6 +10,7 @@
 
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"> -->
 </head>
 
@@ -73,13 +74,13 @@
             <div class="hero-countdown id="timer">		
               <ul class="list countdown">
                 <li class="countdown__item">
-                  <span class="hours">0</span>
+                  <span class="hours">00</span>
                 </li>
                 <li class="countdown__item">
-                  <span class="minutes">0</span>
+                  <span class="minutes">00</span>
                 </li>
                 <li class="countdown__item">
-                  <span class="seconds">0</span>
+                  <span class="seconds">00</span>
                 </li>
               </ul>
               <div class="countdown-text">
@@ -138,10 +139,25 @@
       <!-- /.hero-info -->
     </div>
     <!-- /.container -->
-
-
   </main>
   <!-- /.page -->
+
+   <!-- ВСПЛЫВАЮЩЕЕ ОКНО ПРИ НАЖАТИИ НА КНОПКУ ЗАКАЗАТЬ-->
+  <div class="order">
+    <div class="order-container">
+      <div class="order-block">
+          <button class="modal-menu__close menu-close">
+              <i class="fa fa-times"></i>
+            </button>
+            <h2 class="order__title">оставьте ваши контактные данные и наш менеджер
+                <span class="text_yellow">свяжется с вами!</span>
+            </h2>
+      </div>
+      <!-- /.order-block -->
+    </div>
+    <!-- /.order-container -->
+  </div>
+  <!-- /.order -->
 
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script type="text/javascript" src="jquery.downCount.js"></script>
