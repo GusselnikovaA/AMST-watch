@@ -375,6 +375,13 @@ a {
 
 .input {
   outline: none;
+  background-color: #ffffff;
+  -webkit-box-shadow: inset 1px 3px 7px rgba(0, 0, 0, 0.35);
+          box-shadow: inset 1px 3px 7px rgba(0, 0, 0, 0.35);
+  border: 1px solid transparent;
+  padding: 24px;
+  font-size: 20px;
+  width: 100%;
 }
 
 .title {
@@ -395,15 +402,15 @@ a {
   color: #ffcb00;
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1250px) {
   .container {
-    max-width: 90%;
+    max-width: 980px;
   }
 }
 
-@media (max-width: 568px) {
+@media (max-width: 1000px) {
   .container {
-    max-width: 100%;
+    max-width: 768px;
   }
 }
 
@@ -418,11 +425,24 @@ a {
 
 .page {
   max-width: 1920px;
-  height: 100%;
+  height: 100vh;
   background: url(../img/backround.png) no-repeat;
   background-position: center center;
   background-size: cover;
   background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .page-wrap {
@@ -440,6 +460,8 @@ a {
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 .page__subtitle {
@@ -513,7 +535,7 @@ a {
           align-items: flex-start;
   margin-top: -75px;
   padding-left: 30px;
-  z-index: 9999;
+  z-index: 2;
 }
 
 .hero-sale {
@@ -770,5 +792,107 @@ a {
 
 .countdown__hours {
   margin-right: 20px;
+}
+
+.order {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 3;
+}
+
+.order_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.order-container {
+  position: relative;
+  margin: auto;
+  max-width: 452px;
+  width: 90%;
+  min-height: 524px;
+  background: url(../img/order/fon_form.png) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #000000;
+  padding: 38px;
+}
+
+.order-block {
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.order-block label {
+  display: inline-block;
+  width: 100%;
+  color: #fefefe;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: left;
+  padding-bottom: 16px;
+  padding-left: 24px;
+}
+
+.order__close {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  right: 0;
+  font-size: 30px;
+  color: #ffcc00;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.order__title {
+  max-width: 295px;
+  padding-left: 24px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 41px;
+  margin-top: 0;
+}
+
+.order__input {
+  margin-bottom: 23px;
+}
+
+.order__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 18px 56px;
+  background-color: #ffcc00;
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.46);
+  font-size: 32px;
+  border: none;
+  margin: auto;
+  margin-top: 33px;
 }
 /*# sourceMappingURL=style.css.map */
