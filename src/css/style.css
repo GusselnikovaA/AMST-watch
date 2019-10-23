@@ -600,6 +600,15 @@ a {
   width: 50%;
 }
 
+@media (max-width: 1000px) {
+  .page {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .edge {
   padding-top: 105px;
   padding-left: 67px;
@@ -751,7 +760,7 @@ a {
 
 .hero-countdown {
   position: absolute;
-  bottom: 80px;
+  bottom: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
