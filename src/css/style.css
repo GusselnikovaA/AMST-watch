@@ -609,9 +609,6 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .page__title {
-    text-align: right;
-  }
   .page__column:first-child {
     width: 100%;
     -webkit-box-ordinal-group: 3;
@@ -670,7 +667,8 @@ a {
 
 @media (max-width: 1000px) {
   .edge {
-    padding-top: 30px;
+    margin-top: -90px;
+    padding-top: 0;
     padding-left: 0;
   }
   .edge-wrap {
@@ -837,11 +835,7 @@ a {
 }
 
 @media (max-width: 1000px) {
-  .hero-wrap {
-    position: static;
-  }
   .hero-clock {
-    position: static;
     margin-top: 0;
   }
   .hero__button {
@@ -851,25 +845,29 @@ a {
     display: none;
   }
   .hero-sale {
-    position: static;
-  }
-  .hero-sale__text {
-    position: static;
+    top: 20%;
+    left: 3%;
   }
   .hero-hit {
-    position: static;
-  }
-  .hero-hit__text {
-    position: static;
+    top: 0;
+    left: 0;
   }
   .hero-price {
-    position: static;
-  }
-  .hero-price_before, .hero-price_after {
-    position: static;
+    top: 62%;
   }
   .hero-quality {
-    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    bottom: 70%;
+    left: 86%;
+  }
+  .hero-quality img {
+    margin-bottom: 10px;
   }
 }
 
