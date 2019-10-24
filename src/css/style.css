@@ -546,6 +546,7 @@ a {
 
 .page {
   max-width: 1920px;
+  height: 100vh;
   background: url(../img/backround.png) no-repeat;
   background-position: center center;
   background-size: cover;
@@ -614,6 +615,7 @@ a {
 @media (max-width: 1000px) {
   .page {
     position: static;
+    height: 100%;
   }
   .page-wrap {
     -webkit-box-orient: vertical;
@@ -902,6 +904,12 @@ a {
   margin-bottom: 22px;
 }
 
+@media (max-width: 1250px) {
+  .hero-quality {
+    bottom: -13%;
+  }
+}
+
 @media (max-width: 1000px) {
   .hero-clock {
     margin-top: 0;
@@ -1127,6 +1135,12 @@ a {
 @media (max-width: 576px) {
   .info {
     padding-top: 221px;
+  }
+}
+
+@media (max-width: 450px) {
+  .info {
+    padding-top: 61px;
   }
 }
 
@@ -1460,11 +1474,18 @@ a {
   .feedback-container {
     width: 70%;
   }
+  .feedback__title {
+    margin: 10px 0;
+  }
   .feedback__text {
     padding: 5px;
+    font-size: 12px;
   }
   .feedback-arrows__left, .feedback-arrows__right {
     max-width: 30px;
+  }
+  .feedback__arrows {
+    top: 50%;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -5,7 +5,7 @@ $(document).ready(function(){
 
   feedbackButton.on('click', function(){
     feedback.addClass('feedback_active');
-    $('.feedback-slider').slick('refresh');
+    $('.feedback-slider_dekstop').slick('refresh');
   });
   close.on('click', function(){
     feedback.removeClass('feedback_active');

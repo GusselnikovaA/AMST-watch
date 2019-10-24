@@ -1,7 +1,7 @@
   
 $(document).ready(function(){
   let heroButton = $('.hero__button');
-  let order = $('.order');
+  let order = $('.order_dekstop');
   let close = $('.close');
 
   heroButton.on('click', function(){
