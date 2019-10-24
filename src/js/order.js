@@ -1,8 +1,8 @@
   
 $(document).ready(function(){
-  let heroButton = $('.hero__button');
-  let order = $('.order_dekstop');
-  let close = $('.close');
+  var heroButton = $('.hero__button');
+  var order = $('.order_dekstop');
+  var close = $('.close');
 
   heroButton.on('click', function(){
     order.addClass('order_active');

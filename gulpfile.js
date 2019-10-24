@@ -17,7 +17,7 @@ function minifyСss() {
 }
 
 function minifyJS() {
-  return src(['./src/js/*.js', '!./src/js/edge.js'])
+  return src(['./src/js/*.js'])
         .pipe(uglify())
         .pipe(concat('main.min.js'))
         .pipe(dest('dist/js/'));
@@ -55,8 +55,8 @@ function moveImages(){
 //         .pipe(dest('dist/img'));
 // }
 
-exports.build = series(minifyСss, moveFonts, moveImages, minifyHtml);
-// exports.minifyJS = minifyJS;
+exports.build = series(minifyСss, moveFonts, moveImages, minifyHtml, minifyJS);
+exports.minifyJS = minifyJS;
 exports.minifyHtml = minifyHtml;
 exports.minifyСss = minifyСss;
 exports.moveFonts = moveFonts;
