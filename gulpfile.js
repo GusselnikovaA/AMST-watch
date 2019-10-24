@@ -1,7 +1,7 @@
 const { series, src, dest } = require('gulp');
 let cleanCSS = require('gulp-clean-css');
 const htmlmin = require('gulp-htmlmin');
-// var imagemin = require('gulp-imagemin');
+var imagemin = require('gulp-imagemin');
 var uglify = require('gulp-uglify');
 var rename = require("gulp-rename");
 var concat = require('gulp-concat');
@@ -38,7 +38,7 @@ function moveFonts() {
 
 function moveImages(){
   return src('./src/img/**/*.+(png|jpg|jpeg|svg)')
-        // .pipe(imagemin())
+        .pipe(imagemin())
         .pipe(dest('dist/img'));
 }
 
