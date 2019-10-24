@@ -1,7 +1,7 @@
 $(document).ready(function(){
-  let feedbackButton = $('.info-rating__button');
-  let feedback = $('.feedback_dekstop');
-  let close = $('.close');
+  var feedbackButton = $('.info-rating__button');
+  var feedback = $('.feedback_dekstop');
+  var close = $('.close');
 
   feedbackButton.on('click', function(){
     feedback.addClass('feedback_active');

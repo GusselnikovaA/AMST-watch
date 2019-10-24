@@ -19,7 +19,7 @@
     <div class="container page-global">
       <h1 class="page__title"><span class="page__subtitle">AMST</span> ЧАСЫ, КОТОРЫЕ ВЫБИРАЮТ СИЛЬНЫЕ МУЖЧИНЫ</h1>
       <div class="page-wrap">
-        <section class="edge page__column">
+        <div class="edge page__column">
           <div class="edge-wrap">
             <div class="edge-card">
               <div class="edge__image">
@@ -45,10 +45,10 @@
             <!-- /.edge-card -->
           </div>
           <!-- /.edge-wrap -->
-        </section>
+        </div>
         <!-- /.edge -->
 
-        <section class="hero page__column">
+        <div class="hero page__column">
           <div class="hero-wrap">
             <div class="hero-clock">
               <img src="img/hero/clock.png" alt="картинка часов">
@@ -71,7 +71,7 @@
             </div>
             <!-- /.hero-price -->
 
-            <div class="hero-countdown id="timer">
+            <div class="hero-countdown" id="timer">
               <ul class="list countdown">
                 <li class="countdown__item" id="canvas_hours">
                   <span class="hours">00</span>
@@ -95,13 +95,13 @@
             <button class="button hero__button">Заказать</button>
 
             <div class="hero-quality">
-              <img src="img/hero/30 giorni.png" alt="гарантия">
+              <img src="img/hero/30giorni.png" alt="гарантия">
               <img src="img/hero/100.png" alt="гарантия">
             </div>
             <!-- /.hero-quality -->
           </div>
           <!-- /.hero-wrap -->
-        </section>
+        </div>
         <!-- /.hero -->
 
         <div class="order order_mobile page__column">
@@ -113,11 +113,11 @@
               <span class="text_yellow">свяжется с вами!</span>
             </h2>
             <div class="order-block">
-              <form action="#" class="form order__form" id="order-form">
-                <label for="name">Пример: Василий Петров</label>
-                <input type="text" id="name" name="name" class="input order__input" placeholder="Ваше имя">
-                <label for="phone">Пример: +79230098456</label>
-                <input type="tel" id="phone" name="phone" class="input order__input" placeholder="Ваш номер телефона">
+              <form action="#" class="form order__form" id="order-form_mobile">
+                <label for="name_mobile">Пример: Василий Петров</label>
+                <input type="text" id="name_mobile" name="name" class="input order__input" placeholder="Ваше имя">
+                <label for="phone_mobile">Пример: +79230098456</label>
+                <input type="tel" id="phone_mobile" name="phone" class="input order__input" placeholder="Ваш номер телефона">
                 <button type="submit" class="button order__button">ЗАКАЗАТЬ</button>
               </form>
             </div>
@@ -195,7 +195,7 @@
         </div>
         <!-- /.feedback -->
 
-        <section class="info page__column">
+        <div class="info page__column">
           <div class="info-rating">
             <div class="info-rating__img">
               <img src="img/info/stars.png" alt="Рейтинг звезды">
@@ -226,7 +226,7 @@
             </ul>
           </div>
           <!-- /.info-delivery -->
-        </section>
+        </div>
         <!-- /.hero-info -->
       </div>
       <!-- /.page-wrap -->
@@ -329,8 +329,8 @@
   </div>
   <!-- /.feedback -->
 
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/jquery.final-countdown.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/jquery.final-countdown.js"></script>
   <script src="js/order.js"></script>
   <script src="js/feedback.js"></script>
   <script src="js/slick.min.js"></script>
@@ -338,34 +338,35 @@
   <script src="js/kinetic.js"></script>
   <!-- <script src="js/countdown.js"></script> -->
   <!-- Настройка таймера. date: 'месяц/день/год часы:минуты:секунды'. 24-часовой формат. offset: +4 (часовой пояс, Москва +3). -->
-  <script class="source" type="text/javascript">
-  $(document).ready(function() {
-    $('.countdown').final_countdown({
-      // date: '10/30/2019 00:00:00',
-      // offset: +3,
-      start:'1571885173',
-end:'1571961600',
-now:'1571885173',
-      selectors: {
-    canvas_seconds: 'canvas_seconds',
-    canvas_minutes: 'canvas_minutes',
-    canvas_hours: 'canvas_hours',
-},
-seconds: {
-    borderColor: '#7995D5',
-    borderWidth: '6'
-},
-minutes: {
-    borderColor: '#ACC742',
-    borderWidth: '6'
-},
-hours: {
-    borderColor: '#ECEFCB',
-    borderWidth: '6'
-}}, function () {
-      // $('#timer').css('display', 'none');
+  <script class="source">
+    $(document).ready(function () {
+      $('.countdown').final_countdown({
+        // date: '10/30/2019 00:00:00',
+        // offset: +3,
+        start: '1571885173',
+        end: '1571961600',
+        now: '1571885173',
+        selectors: {
+          canvas_seconds: 'canvas_seconds',
+          canvas_minutes: 'canvas_minutes',
+          canvas_hours: 'canvas_hours',
+        },
+        seconds: {
+          borderColor: '#7995D5',
+          borderWidth: '6'
+        },
+        minutes: {
+          borderColor: '#ACC742',
+          borderWidth: '6'
+        },
+        hours: {
+          borderColor: '#ECEFCB',
+          borderWidth: '6'
+        }
+      }, function () {
+        // $('#timer').css('display', 'none');
+      });
     });
-  });
   </script>
 
 </body>
