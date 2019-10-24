@@ -95,7 +95,7 @@
             <button class="button hero__button">Заказать</button>
 
             <div class="hero-quality">
-              <img src="img/hero/30giorni.png" alt="гарантия">
+              <img src="img/hero/30_giorni.png" alt="гарантия">
               <img src="img/hero/100.png" alt="гарантия">
             </div>
             <!-- /.hero-quality -->
@@ -328,43 +328,22 @@
     <!-- /.feedback-container -->
   </div>
   <!-- /.feedback -->
-
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="js/jquery.final-countdown.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.downCount.js"></script>
   <script src="js/order.js"></script>
   <script src="js/feedback.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/slider.settings.js"></script>
-  <script src="js/kinetic.js"></script>
-  <!-- <script src="js/countdown.js"></script> -->
+  <script src="js/main.min.js"></script>
+  
   <!-- Настройка таймера. date: 'месяц/день/год часы:минуты:секунды'. 24-часовой формат. offset: +4 (часовой пояс, Москва +3). -->
   <script class="source">
     $(document).ready(function () {
-      $('.countdown').final_countdown({
-        // date: '10/30/2019 00:00:00',
-        // offset: +3,
-        start: '1571885173',
-        end: '1571961600',
-        now: '1571885173',
-        selectors: {
-          canvas_seconds: 'canvas_seconds',
-          canvas_minutes: 'canvas_minutes',
-          canvas_hours: 'canvas_hours',
-        },
-        seconds: {
-          borderColor: '#7995D5',
-          borderWidth: '6'
-        },
-        minutes: {
-          borderColor: '#ACC742',
-          borderWidth: '6'
-        },
-        hours: {
-          borderColor: '#ECEFCB',
-          borderWidth: '6'
-        }
+      $('.countdown').downCount({
+        date: '10/30/2019 00:00:00',
+        offset: +3,
       }, function () {
-        // $('#timer').css('display', 'none');
+        $('#timer').css('display', 'none');
       });
     });
   </script>

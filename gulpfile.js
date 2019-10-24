@@ -6,7 +6,6 @@ var uglify = require('gulp-uglify');
 var rename = require("gulp-rename");
 var concat = require('gulp-concat');
 var useref = require('gulp-useref');
-// var svgSprite = require('gulp-svg-sprite');
 
 
 function minifyСss() {
@@ -43,22 +42,9 @@ function moveImages(){
         .pipe(dest('dist/img'));
 }
 
-// function moveSvg(){
-//   return src('./src/img/**/*.svg')
-//         .pipe(svgSprite({
-//           mode: {
-//             symbol: {
-//               sprite: "sprite.svg"
-//             }
-//           }
-//         }))
-//         .pipe(dest('dist/img'));
-// }
-
-exports.build = series(minifyСss, moveFonts, moveImages, minifyHtml, minifyJS);
+exports.build = series(minifyСss, moveFonts, moveImages, minifyJS, minifyHtml);
 exports.minifyJS = minifyJS;
 exports.minifyHtml = minifyHtml;
 exports.minifyСss = minifyСss;
 exports.moveFonts = moveFonts;
 exports.moveImages = moveImages;
-// exports.moveSvg = moveSvg;
