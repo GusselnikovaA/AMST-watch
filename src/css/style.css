@@ -348,6 +348,7 @@ template {
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #000;
 }
 
 img {
@@ -1278,7 +1279,7 @@ a {
 
 .order__title {
   font-family: 'Open Sans', sans-serif;
-  max-width: 295px;
+  max-width: 300px;
   padding-left: 24px;
   color: #ffffff;
   font-size: 18px;
