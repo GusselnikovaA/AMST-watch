@@ -617,6 +617,8 @@ a {
   .page {
     position: static;
     height: 100%;
+    background-position: top center;
+    background-size: auto;
   }
   .page-wrap {
     -webkit-box-orient: vertical;
@@ -664,6 +666,9 @@ a {
 }
 
 @media (max-width: 576px) {
+  .page {
+    display: block;
+  }
   .page__title {
     font-size: 20px;
     padding-right: 10px;
@@ -836,6 +841,7 @@ a {
   width: 440px;
   position: absolute;
   top: 49%;
+  left: 8%;
 }
 
 .hero-price_before, .hero-price_after {
@@ -892,6 +898,7 @@ a {
 .hero-countdown {
   position: absolute;
   bottom: 60px;
+  left: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -908,6 +915,12 @@ a {
 @media (max-width: 1250px) {
   .hero-quality {
     bottom: -13%;
+  }
+  .hero-price {
+    left: 2%;
+  }
+  .hero-countdown {
+    left: 22%;
   }
 }
 
@@ -931,6 +944,7 @@ a {
   }
   .hero-price {
     top: 62%;
+    left: 22%;
   }
   .hero-quality {
     display: -webkit-box;
@@ -955,6 +969,9 @@ a {
   .hero-quality img {
     margin-right: 0;
   }
+  .hero-price {
+    left: 11%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -975,10 +992,12 @@ a {
   .hero-sale {
     max-width: 300px;
     left: -30%;
+    top: 12%;
   }
   .hero-price {
     top: 60%;
-    max-width: 350px;
+    max-width: 310px;
+    left: 4%;
   }
   .hero-price_before, .hero-price_after {
     font-size: 20px;
@@ -993,7 +1012,7 @@ a {
   }
 }
 
-@media (max-width: 356px) {
+@media (max-width: 360px) {
   .hero-clock {
     margin-top: 10px;
   }
@@ -1003,13 +1022,13 @@ a {
   .hero-sale {
     max-width: 250px;
     left: -35%;
-    top: 12%;
   }
   .hero-sale__text {
     font-size: 20px;
   }
   .hero-price {
     max-width: 300px;
+    left: 0;
   }
 }
 
@@ -1139,6 +1158,9 @@ a {
   .info {
     padding-top: 221px;
   }
+  .info-list__item:first-child .info-list__icon {
+    width: 70px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -1224,7 +1246,7 @@ a {
   margin: auto;
   max-width: 452px;
   width: 90%;
-  min-height: 524px;
+  height: 524px;
   background: url(../img/order/fon_form.jpg) no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1291,7 +1313,9 @@ a {
 }
 
 .order__input {
+  display: block;
   margin-bottom: 23px;
+  width: 376px;
 }
 
 .order__button {
@@ -1333,12 +1357,16 @@ a {
 
 @media (max-width: 576px) {
   .order-container {
-    min-height: 350px;
+    height: 430px;
+  }
+  .order__input {
+    width: 273px;
   }
 }
 
 @media (max-width: 356px) {
   .order-container {
+    height: 400px;
     padding: 0;
   }
   .order__button {
